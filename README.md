@@ -1,2 +1,1 @@
-# 50 Days SQL Challenge
- 
+# 50_days_sql_challenge
