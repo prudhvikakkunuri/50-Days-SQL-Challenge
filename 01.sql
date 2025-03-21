@@ -34,9 +34,9 @@ Write the SQL query to find the second highest salary
 
 -- Approach 1
 
-SELECT * FROM employees
+``` SELECT * FROM employees 
 ORDER BY salary DESC
-LIMIT 1 OFFSET 1;
+LIMIT 1 OFFSET 1; ```
 
 
 -- ADDED new records
@@ -47,14 +47,14 @@ VALUES
 
 -- Approach 2
 -- Window function dense_rank
-
+``` @
 SELECT *
 FROM
 (	SELECT *,
 	DENSE_RANK() OVER( ORDER BY salary DESC) drn	
 	FROM employees
 ) as subquery
-WHERE drn = 2
+WHERE drn = 2 ```
 
 
 
