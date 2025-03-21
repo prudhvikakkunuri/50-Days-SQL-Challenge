@@ -1,7 +1,7 @@
 -- 01/50 Days SQL challenge
 
 -- Create the employees table
-``` CREATE TABLE employees (
+CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     department VARCHAR(50),
@@ -18,7 +18,7 @@ INSERT INTO employees (name, department, salary) VALUES
 ('Emma Wilson', 'Marketing', 59000),
 ('Alex Lee', 'Sales', 58000),
 ('Sarah Adams', 'Sales', 58000),
-('Ryan Clark', 'Sales', 61000); ```
+('Ryan Clark', 'Sales', 61000);
 
 
 /*
@@ -34,9 +34,9 @@ Write the SQL query to find the second highest salary
 
 -- Approach 1
 
-``` SELECT * FROM employees 
+SELECT * FROM employees 
 ORDER BY salary DESC
-LIMIT 1 OFFSET 1; ```
+LIMIT 1 OFFSET 1;
 
 
 -- ADDED new records
@@ -47,14 +47,14 @@ VALUES
 
 -- Approach 2
 -- Window function dense_rank
-``` @
+
 SELECT *
 FROM
 (	SELECT *,
 	DENSE_RANK() OVER( ORDER BY salary DESC) drn	
 	FROM employees
 ) as subquery
-WHERE drn = 2 ```
+WHERE drn = 2
 
 
 
