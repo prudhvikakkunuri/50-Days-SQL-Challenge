@@ -55,14 +55,14 @@ SELECT * FROM returns;
 
 
 SELECT 
-	EXTRACT(MONTH FROM o.orderdate) || '-' || EXTRACT(YEAR FROM o.orderdate) as month,
+	MONTH (o.orderdate) || '-' || YEAR(o.orderdate) as month,
 	COUNT(r.returnid) as total_return
 FROM returns as r
 LEFT JOIN
 orders as o
 ON r.orderid = o.orderid
 GROUP BY month
-ORDER BY month ;
+ORDER BY month;
 
 
 
