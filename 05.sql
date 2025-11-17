@@ -1,7 +1,5 @@
 -- Day 05/30 SQL Challenge 
 
-
-
 DROP TABLE IF EXISTS Employees;
 -- Create the Employee table
 CREATE TABLE Employees (
