@@ -26,18 +26,6 @@ INSERT INTO Employees (EmployeeID, Name, Department, Salary, HireDate) VALUES
 
 Write a SQL query to retrieve the 
 third highest salary from the Employee table.
-
-*/
-
-
-
-
-
-
-
-
-
-
 -- -----------------------
 -- My Solutions
 -- -----------------------
@@ -54,32 +42,8 @@ FROM
 WHERE drn = 3
 
 
-
-
-
-
 -- Your task
 -- Find the employee details who has highest salary from each department
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 SELECT 
 	salary
