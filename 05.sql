@@ -21,9 +21,8 @@ INSERT INTO Employees (EmployeeID, Name, Department, Salary, HireDate) VALUES
 
 
 /*
-
 Write a SQL query to retrieve the 
-third highest salary from the Employee table.
+third highest salary from the Employee table. */
 -- -----------------------
 -- My Solutions
 -- -----------------------
