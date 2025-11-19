@@ -82,27 +82,4 @@ WHERE customer_id NOT IN (SELECT customer_id FROM orders
 
 
 
-
-
-
-
-
-
 -- Your task Find customer who has done purchase this month and also last month
-
-
-
-
-
-
-
-
-
-/*	
-Follow me in LinkedIn :: https://www.linkedin.com/in/najirr/
-Follow me in insta :: https://www.instagram.com/zero_analyst/
-Subscribe to our youtube channel :: https://www.youtube.com/@zero_analyst
-*/
-	
-
-
