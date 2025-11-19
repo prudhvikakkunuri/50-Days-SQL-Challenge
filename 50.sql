@@ -84,25 +84,6 @@ product inside each category
 SELECT * FROM sellers;
 SELECT * FROM orders;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 SELECT
     s.seller_name,
     o.category,
