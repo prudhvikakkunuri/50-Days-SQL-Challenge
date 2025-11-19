@@ -60,29 +60,4 @@ WHERE drn = 2
 
 
 
-
-
-
--- Your Task 
-
 -- Question: Get the details of the employee with the second-highest salary from each department
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*	
-Follow me in LinkedIn :: https://www.linkedin.com/in/najirr/
-Follow me in insta :: https://www.instagram.com/zero_analyst/
-Subscribe to our youtube channel :: https://www.youtube.com/@zero_analyst
-*/
-	
-
