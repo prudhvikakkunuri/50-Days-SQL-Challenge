@@ -98,21 +98,3 @@ p1.purchasedate < p2.purchasedate
 Find out what is the % of chance is there that the 
 customer who bought MacBook will buy an Airpods
 */
-
-
-
-
-
-
-
-
-
-
-
-
-/*	
-Follow me in LinkedIn :: https://www.linkedin.com/in/najirr/
-Follow me in insta :: https://www.instagram.com/zero_analyst/
-Subscribe to our youtube channel :: https://www.youtube.com/@zero_analyst
-*/
-
