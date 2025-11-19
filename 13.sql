@@ -78,16 +78,4 @@ WHERE e1.manager_id = e2.emp_id
 In other words, retrieve the names of employees who appear as managers in the manager_id column.
 
 
-
-
-
-
-
-
-/*	
-Follow me in LinkedIn :: https://www.linkedin.com/in/najirr/
-Follow me in insta :: https://www.instagram.com/zero_analyst/
-Subscribe to our youtube channel :: https://www.youtube.com/@zero_analyst
-*/
-	
     
