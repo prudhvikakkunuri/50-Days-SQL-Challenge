@@ -18,6 +18,7 @@ INSERT INTO employees(emp_id, name, department, salary) VALUES
 (1, 'John Doe', 'Finance', 60000.00),
 (2, 'Jane Smith', 'Finance', 65000.00), 
 (2, 'Jane Smith', 'Finance', 65000.00),   -- Duplicate
+	
 (9, 'Lisa Anderson', 'Sales', 63000.00),
 (9, 'Lisa Anderson', 'Sales', 63000.00),  -- Duplicate
 (9, 'Lisa Anderson', 'Sales', 63000.00),  -- Duplicate
