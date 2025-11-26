@@ -64,18 +64,14 @@ WHERE e1.manager_id = e2.emp_id
 
 
 
-
-
-    
-
-
-
-
-
-
 -- Your Task
 -- Write a SQL query to find the names of all employees who are also managers. 
-In other words, retrieve the names of employees who appear as managers in the manager_id column.
-
+-- In other words, retrieve the names of employees who appear as managers in the manager_id column.
+    
+SELECT * FROM EMPLOYEES;
+SELECT  DISTINCT(b.name)
+FROM employees a
+INNER JOIN employees b
+ON a.manager_id=b.emp_id
 
     
