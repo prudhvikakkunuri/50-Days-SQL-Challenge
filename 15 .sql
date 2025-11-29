@@ -24,19 +24,6 @@ INSERT INTO orders (order_date, product_id, quantity, price) VALUES
     ('2024-04-09', 1, 10, 50.00),
     ('2024-04-10', 2, 8, 40.00);
 
--- Inserting records for the last month
-INSERT INTO orders (order_date, product_id, quantity, price) VALUES
-    ('2024-03-01', 1, 12, 50.00),
-    ('2024-03-02', 2, 10, 40.00),
-    ('2024-03-03', 3, 18, 30.00),
-    ('2024-03-04', 4, 14, 25.00),
-    ('2024-03-05', 5, 7, 60.00),
-    ('2024-03-06', 6, 22, 20.00),
-    ('2024-03-07', 7, 20, 35.00),
-    ('2024-03-08', 8, 16, 45.00),
-    ('2024-03-09', 1, 12, 50.00),
-    ('2024-03-10', 2, 10, 40.00);
-
 -- Inserting records for the previous month
 INSERT INTO orders (order_date, product_id, quantity, price) VALUES
     ('2024-02-01', 1, 15, 50.00),
