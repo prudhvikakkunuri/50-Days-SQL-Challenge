@@ -43,7 +43,7 @@ SELECT * FROM products;
 SELECT SUM(price * quantity_sold) from products;
 
 
- SELECT
+SELECT
     product_id,
     product_name,
     price * quantity_sold as revenue_by_product,
