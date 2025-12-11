@@ -47,10 +47,10 @@ SELECT
 FROM
 (	
 SELECT *,
-	DENSE_RANK() OVER(ORDER BY salary) as drn
+	DENSE_RANK() OVER(PARTITION BY Department ORDER BY salary) as drn
 FROM employees
 )
-WHERE drn = 3
+WHERE drn = 2
 
 
 
