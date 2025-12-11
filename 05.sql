@@ -40,7 +40,7 @@ WHERE drn = 3
 
 
 -- Your task
--- Find the employee details who has highest salary from each department
+-- Find the employee details who has 2nd highest salary from each department
 
 SELECT 
 	salary
