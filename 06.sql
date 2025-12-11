@@ -83,3 +83,18 @@ WHERE customer_id NOT IN (SELECT customer_id FROM orders
 
 
 -- Your task Find customer who has done purchase this month and also last month
+SELECT 
+	*
+FROM customers
+WHERE customer_id IN (SELECT customer_id FROM orders
+						WHERE MONTH(order_date)=MONTH(current_date)-1 	
+						AND 
+						YEAR(order_date)=YEAR(current_date))
+AND customer_id IN (SELECT customer_id FROM orders
+						WHERE MONTH(order_date)=MONTH(current_date)	
+						AND 
+						YEAR(order_date)=YEAR(current_date));
+
+
+
+;
