@@ -43,14 +43,14 @@ WHERE drn = 3
 -- Find the employee details who has 2nd highest salary from each department
 
 SELECT 
-	salary
+	*
 FROM
 (	
 SELECT *,
 	DENSE_RANK() OVER(PARTITION BY Department ORDER BY salary) as drn
 FROM employees
-)
-WHERE drn = 2
+) subquery
+WHERE drn = 2;
 
 
 
