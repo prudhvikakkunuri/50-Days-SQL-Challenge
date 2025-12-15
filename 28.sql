@@ -35,7 +35,21 @@ FROM
     GROUP BY customerid, description
     ORDER BY customerid, total_purchase DESC  
 )
-WHERE rn = 1
+WHERE rn = 1;
+
+
+
+
+SELECT
+    hotel_name,
+    SUM(CASE
+        WHEN dayofweek(booking_date) IN (1,7) 
+        THEN 1
+        ELSE 0
+    END) as total_w_bookings
+FROM bookings
+GROUP BY hotel_name
+ORDER BY total_w_bookings DESC;
 
 
 
