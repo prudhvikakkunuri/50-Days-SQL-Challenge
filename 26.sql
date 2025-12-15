@@ -34,11 +34,8 @@ Identify employees who have a higher salary than their manager.
 
 SELECT 
     e.employee_id,
-    e.employee_name,
-    e.department,
     e.salary,
     e.manager_id,
-    m.employee_name as manager_name,
     m.salary as manager_salary
 from employees as e
 JOIN
