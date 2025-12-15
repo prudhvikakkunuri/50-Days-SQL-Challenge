@@ -141,15 +141,15 @@ SELECT
 FROM
 (
      SELECT 
-        EXTRACT(MONTH FROM invoicedate) as month,
+        MONTH(invoicedate) as month,
         description,
         SUM(unitprice * quantity) as total_sale,
-        RANK() OVER( PARTITION BY EXTRACT(MONTH FROM invoicedate) 
+        RANK() OVER( PARTITION BY MONTH(invoicedate) 
                     ORDER BY SUM(unitprice * quantity) DESC) as rn
     FROM walmart_eu
     GROUP BY month, description
 ) as subquery
-WHERE rn= 1
+WHERE rn= 1;
 
 
 
